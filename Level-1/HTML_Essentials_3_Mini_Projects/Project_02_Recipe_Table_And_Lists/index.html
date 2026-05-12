@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Planner: Table + Lists</title>
+    <meta name="description" content="An easy and comforting Bacon Alfredo recipe that will warm up your weeknights!" />
+    <meta name="keywords" content="Bacon, Alfredo, Pasta, Cream, Dairy" />
+    <meta name="author" content="Sara Volf" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Recipe Planner</h1>
+        <p>A <span class="emphasize">place</span> to plan your meals</p>
+      </header>
+      <main>
+        <section class="card">
+          <h2>Today's Plan</h2>
+          <ul>
+            <li>Chicken Bacon Alfredo</li>
+            <li>Greek Yoghurt with Blueberries and Parmesan</li>
+            <li>Simple Lentil Soup</li>
+          </ul>
+          <ol>
+            <li>Dice bacon, then fry on pan.</li>
+            <li>Chop onions and garlic.</li>
+            <li>Drain excess oil from bacon on pan.</li>
+            <li>Fry onions and garlic.</li>
+            <li>Meanwhile, chop mushrooms. Add to pot after onions and garlic have softened</li>
+            <li>Add in heavy cream, after mushrooms have released their juice</li>
+            <li>Boil pasta for instructed time</li>
+            <li>Serve! Bon Appetít!</li>
+          </ol>
+        </section>
+        <section class="card">
+          <h2>Ingredients Table</h2>
+          <table>
+            <thead>
+              <td>Ingredient</td>
+              <td>Amount</td>
+              <td>Notes</td>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Bacon</td>
+                <td>200g</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Onions</td>
+                <td>2 (Large)</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Garlic</td>
+                <td>4 Cloves</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Mushrooms</td>
+                <td>200g</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Heavy Cream</td>
+                <td>½ litre</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Pasta</td>
+                <td>400g</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="card">
+          <h2>Shopping Note</h2>
+          <form action="submit">
+            <label for="item">Item</label>
+            <input type="text" name="item" id="item" placeholder="Example: Carrot" />
+            <label for="quantity">Quantity</label>
+            <input type="number" name="quantity" id="quantity" min="1" max="10" />
+            <label for="category">Category</label>
+            <select name="category" id="category">
+              <option value="produce">Produce</option>
+              <option value="dairy">dairy</option>
+              <option value="protein">Protein</option>
+              <option value="other">Other</option>
+            </select>
+            <label for="extranotes">Extra Notes</label>
+            <textarea name="extranotes" id="extranotes" placeholder="Add extra notes here."></textarea>
+            <input type="submit" />
+          </form>
+        </section>
+      </main>
+      <footer>
+        <p>© 2026, Recipe Planner.</p>
+      </footer>
+    </div>
+  </body>
+</html>

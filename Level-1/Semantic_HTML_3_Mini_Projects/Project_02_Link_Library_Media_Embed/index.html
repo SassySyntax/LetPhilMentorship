@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link Library + Media + Embed</title>
+    <meta name="description" content="A library of embedded media!" />
+    <meta name="author" content="Media Library" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Link Library + Media + Embed</h1>
+        <p class="small">The #1 source of media on the internet</p>
+        <a href="#content" class="skip">Skip to content</a>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="#content">Content</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#embed">Embed</a></li>
+          <li><a href="#extras">Extras</a></li>
+        </ul>
+      </nav>
+      <main id="content">
+        <section id="media">
+          <h2>Media</h2>
+          <figure>
+            <img src="https://picsum.photos/600/400" alt="A random image from Picsum!" />
+            <figcaption>A random image from Picsum! (Refresh page for a different image)</figcaption>
+          </figure>
+          <audio controls>
+            <source src="https://diviextended.com/wp-content/uploads/2021/10/sound-of-waves-marine-drive-mumbai.mp3" type="audio/mp3" />
+            Your browser does not support the audio format.
+          </audio>
+          <video controls>
+            <source src="https://lorem.video/720p" type="video/mp4" />
+            Your browser does not support the video format.
+          </video>
+        </section>
+        <section id="embed">
+          <h2>Embed</h2>
+          <iframe width="934" height="525" src="https://www.youtube.com/embed/8qXu4kFPPBU?si=PNWTCXTehILjj1yk" title="No JavaScript, No Hacks Hamburger Menu Interaction"></iframe>
+        </section>
+        <section id="extras">
+          <h2>Extras</h2>
+          <ul>
+            <li><a href="https://www.google.com/" target="_blank" rel="noopener">Visit Google</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener">Visit Mozilla Developer Network (MDN)</a></li>
+            <li><a href="https://stackoverflow.com" target="_blank" rel="noopener">Visit Stack Overflow</a></li>
+            <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">Visit W3 Schools</a></li>
+            <li><a href="https://chatmax.app/claude" target="_blank" rel="noopener">Chat with Claude AI</a></li>
+          </ul>
+        </section>
+        <article class="card">
+          <h3>Mozilla Developer Network (MDN)</h3>
+          <p>The most comprehensive information repository for web developer technologies, on the internet</p>
+          <a href="https://developer.mozilla.org/en-US/">Visit Mozilla Developer Network (MDN)</a>
+        </article>
+        <article class="card">
+          <h3>CSS Tricks</h3>
+          <p>An online magazine about front end development</p>
+          <a href="https://css-tricks.com/">Visit CSS Tricks</a>
+        </article>
+        <article class="card">
+          <h3>The top 55 resources for front end developers</h3>
+          <p>A compiled list of resources for aspiring front end developers</p>
+          <a href="https://www.waveapps.com/freelancing/front-end-developer-resources">View list on Wave's blog</a>
+        </article>
+      </main>
+      <aside>
+        <h2>Best practices for links</h2>
+        <ul>
+          <li>Use meaningful link text</li>
+          <li>The href attribute ensures the anchor tag is keyboard-accessible, and has semantic meaning</li>
+          <li>Use anchor tags for navigation, and buttons for actions (i.e., "Submit", "Login")</li>
+          <li>Use relative URLS for internal links (i.e., "/about")</li>
+          <li>The rel value "noopener noreferrer" improves privacy and prevents security vulnerabilities via window.opener</li>
+          <li>Use aria-label attribute on links with icons (image) for content</li>
+        </ul>
+      </aside>
+      <footer>
+        <p>Descriptive links help accessibility because they provide context for screen readers. A question to ask is, does the link have a purpose, destination, or expected outcome?</p>
+      </footer>
+    </div>
+  </body>
+</html>

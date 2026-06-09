@@ -1,0 +1,108 @@
+/*
+  🧠 Project 3 — Background Image Playground 
+
+  IMPORTANT RULES:
+  - After each step: SAVE → REFRESH.
+*/
+
+/* STEP 1 — Set the hero height + base text color */
+/*
+  Select body: remove margin and set a base font-family.
+  Select .hero and give it a tall height (example: 70vh).
+  Set a text color that will be readable on top of an image (often white-ish).
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  /* color: #000; */
+}
+
+.hero {
+  height: 70vh;
+  padding-top: 1em;
+}
+
+/* STEP 2 — Add the background image */
+/*
+  Select .hero and set:
+    background-image: url('../../assets/hero-bg.svg');
+  Make sure the URL path is correct:
+  - MENTEE/styles.css is inside Project_03/.../MENTEE/
+  - assets is at the root bundle level.
+  So you go up TWO levels: ../../assets/hero-bg.svg
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.hero {
+  background-image: url('./assets/pero-kalimero-9BJRGlqoIUk-unsplash.jpg');
+}
+
+/* STEP 3 — Control size, position, repeat */
+/*
+  Add these properties on .hero:
+  - background-size: cover;   (try 'contain' too)
+  - background-position: center;
+  - background-repeat: no-repeat;  (try 'repeat' to see tiling)
+  You are practicing: sizing, positioning, repeating.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+}
+
+/* STEP 4 — Add a second background pattern (optional layer) */
+/*
+  CSS can layer multiple backgrounds (first one is on top).
+  Try:
+  background-image: url('../../assets/dots.svg'), url('../../assets/hero-bg.svg');
+  Then control each layer with:
+  background-size: 260px 260px, cover;
+  background-repeat: repeat, no-repeat;
+  background-position: top left, center;
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.hero::before {
+  content: '';
+  position: absolute;
+  background-image: url('./assets/sean-sinclair-C_NJKfnTR5A-unsplash.jpg');
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  mix-blend-mode: color-burn;
+  background-attachment: fixed;
+}
+
+.hero-content {
+  mix-blend-mode: color-dodge;
+}
+
+.page {
+  color: #242f37;
+}
+
+/* STEP 5 — Test background-attachment */
+/*
+  Add background-attachment: fixed; to .hero.
+  Then scroll the page.
+  Notice: the background stays in place while content moves.
+  Tip: On some mobile browsers this may behave differently.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
